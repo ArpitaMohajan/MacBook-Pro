@@ -1,30 +1,21 @@
-
-
-
-// const total = document.getElementById(parseFloat('shipping'));
-
 function updateTotal() {
     const memoryTotal = parseFloat(memoryField.innerText);
     const storageTotal = parseFloat(storageField.innerText);
     const deliveryTotal = parseFloat(deliveryField.innerText);
     const grandTotal = memoryTotal + storageTotal + deliveryTotal;
     document.getElementById('shipping').innerText = grandTotal + 1299;
+    document.getElementById('shipping8').innerText = grandTotal + 1299;
 
-    // total.innerText = grandTotal;
 }
+
+// document.getElementById('shipping').innerText =
 // grandTotal.innerText
 // const tax = grandTotal / 20;
 // const totalPrice = grandTotal + tax;
 // totalPrice.innerText = tax
 // total.innerText = grandTotal;
 
-// const memoryTotal
-// function getMain() {
-//     const shippingTotal = document.getElementById('shipping');
-//     const mainTotal = shippingTotal.innerText;
-//     total.innerText = grandTotal + mainTotal;
-//     return total.innerText;
-// }
+//
 
 
 const memoryField = document.getElementById('shipping2')
