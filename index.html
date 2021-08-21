@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+
+
+    <!-- Custom styling -->
+    <style>
+        body {
+            font-family: "Space Grotesk", sans-serif;
+        }
+    </style>
+    <title>Canva</title>
+</head>
+
+<body class="p-2 grid">
+    <main>
+        <div class="container mx-auto px-4 md:px-2">
+            <div class="grid grid-cols-2">
+                <!-- Image -->
+                <div class="p-5 border rounded border-gray-200 m-5">
+                    <div class="h-100 w-full">
+                        <img src="images/mac.png" id="art" class="w-full rounded h-full object-cover" alt="" />
+                    </div>
+                </div>
+
+                <!-- Options -->
+                <div class="mt-10 max-w-lg mx-auto">
+                    <h1 class="text-4xl py-2 grid">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <span id="desc" class="text-lg text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit.
+                        Dolore
+                        quasi, omnis quibusdam dicta quae aspernatur labore optio enim deserunt sed repellat nobis,
+                        dolorum,
+                        atque
+                        debitis temporibus voluptate nemo dolores beatae.</span>
+                    <!-- memory -->
+                    <div class="pt-10">
+                        <h3 class="text-2xl p-2">Memory</h3>
+                        <button class="
+                  p-5  border border-gray-200 shadow hover:shadow-lg  rounded " id="first">
+                            8GB undifined memory
+                        </button>
+                        <button class="
+                  p-5 border border-gray shado hover:shadow-lg rounded" id="last">
+                            16GB undifined memory
+
+                        </button>
+                    </div>
+
+                    <!-- storage -->
+                    <div class="pt-5 storage" id="memory">
+                        <h1 class="text-2xl p-2">Storage</h1>
+                        <button class="
+                  p-2  border border-gray-200 shadow hover:shadow-lg  rounded    " id="third">
+                            256GB SSD storage
+                        </button>
+                        <button class="
+                  p-2  border border-gray-200 shadow hover:shadow-lg  rounded    " id="design">
+                            512GB SSD storage
+                        </button>
+                        <button id="fourth" class="
+                  p-2 border border-gray-200 shadow-sm hover:shadow-lg rounded
+                "> 1TB SSD storage
+                        </button>
+                    </div>
+                    <!-- delivery -->
+                    <div class="pt-10 delivery">
+                        <h3 class="text-2xl p-2">Choose your delivery option</h3>
+                        <button id="fifth" class="
+                  p-2 m-1 border border-gray-200 shadow-sm hover:shadow-lg rounded ">
+                            Friday, Aug 25 FREE Prime Delivery
+                        </button>
+                        <button id="sixth" class="
+                  p-2 m-1 border border-gray-200 shadow-sm hover:shadow-lg rounded 
+                ">
+                            Friday, Aug 21 FREE Prime Delivery $20
+                        </button>
+                    </div>
+
+                    <div class="mt-2">
+                        <div class="row">
+                            <div class="col-md-8">
+
+                                <h5 class="text-1xl py-2">
+                                    Best Price: <span id="shipping1">1299</span>$
+                                </h5>
+                                <h5 class="text-1xl py-2">
+                                    Extra Memory Cost: <span id="shipping2">0</span>$
+                                </h5>
+                                <h5 class="text-1xl py-2">
+                                    Extra Storage cost : <span id="shipping3">0</span>$
+                                </h5>
+                                <h5 class="text-1xl py-2">
+                                    Delivery charge: <span id="shipping4">0</span>$
+                                </h5>
+                            </div>
+                        </div>
+
+                        <div class="text-2xl py-2">Total: <span id="shipping">$</span>1299</div>
+                        <input type="text" name="" id="promo"
+                            class="form-control text-center border-black-200 border border-black-600 shadow-lg m-1">
+                        <button id="applying" class="bg-red-500 text-lg border rounded m-1">Apply</button>
+                        <div class="text-3xl pt-2 text-center mt-2 max-w-lg mt-10">Total: <span
+                                id="shipping">1299</span>$
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Custom js -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
